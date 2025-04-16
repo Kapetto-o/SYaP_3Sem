@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    background-color: rgb(244, 244, 244);
+}
+
+h1 {
+    color: rgb(67, 171, 71);
+}
+
+input[type="checkbox"]:checked {
+    background-color: rgb(67, 171, 71);
+}
+
+input[type="text"] {
+    border: 1px solid rgb(179, 179, 179);
+    padding: 5px;
+    border-radius: 3px;
+}
+button {
+    background-color: rgb(67, 171, 71);
+    color: rgb(244, 244, 244);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(51, 118, 55);
+}
+
+.filters {
+    margin-top: 20px;
+}
+
+.filters button {
+    margin-right: 10px;
+}
+
+.task-list {
+    margin-top: 20px;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(221, 221, 221);
+    justify-content: space-between;
+    margin-bottom: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.task-item input[type="text"] {
+    width: 70%;
+    margin-right: 10px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(221, 221, 221);
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.task-item button {
+    margin-left: 5px;
+}
+
+button.delete {
+    background-color: rgb(244, 67, 54);
+}
+
+button.delete:hover {
+    background-color: rgb(170, 42, 40);
+}

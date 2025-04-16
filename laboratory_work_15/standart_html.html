@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>laboratory_work_15</title>
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+  <form id="validateForm" novalidate>
+    <h3>Заполните форму:</h3>
+
+    <label for="surname">Фамилия</label>
+    <input type="text" id="surname" name="surname" placeholder="Например: Иванов" required>
+    <small>Только буквы русского или английского алфавита, не более 20 символов.</small>
+    <div class="error-message" id="surname-error"></div>
+
+    <label for="name">Имя</label>
+    <input type="text" id="name" name="name" placeholder="Например: Иван" required>
+    <small>Только буквы русского или английского алфавита, не более 20 символов.</small>
+    <div class="error-message" id="name-error"></div>
+
+    <label for="email">E-mail</label>
+    <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+    <small>Формат: example@mail.com (после "@" – 2-5 букв, после точки – 2-3 буквы, без пробелов)</small>
+    <div class="error-message" id="email-error"></div>
+
+    <label for="phone">Телефон</label>
+    <input type="text" id="phone" name="phone" placeholder="(0XX)XXX-XX-XX" required>
+    <small>Формат: (0XX)XXX-XX-XX (только цифры и символы: (, ), -)</small>
+    <div class="error-message" id="phone-error"></div>
+
+    <label for="city">Город</label>
+    <select id="city" name="city" required>
+      <option value="Минск">Минск</option>
+      <option value="Brest">Брест</option>
+      <option value="Vitebsk">Витебск</option>
+      <option value="Gomel">Гомель</option>
+      <option value="Grodno">Гродно</option>
+      <option value="Mogilev">Могилёв</option>
+    </select>
+    <div class="error-message" id="city-error"></div>
+
+    <div class="checkContainer">
+      <label for="university">Я учусь в БГТУ</label>
+      <input type="checkbox" id="university" name="university">
+    </div>
+
+    <div class="radioContainer">
+      <label>На каком курсе вы учитесь?</label>
+      <label><input type="radio" name="course" value="1"> 1</label>
+      <label><input type="radio" name="course" value="2"> 2</label>
+      <label><input type="radio" name="course" value="3"> 3</label>
+      <label><input type="radio" name="course" value="4"> 4</label>
+    </div>
+
+    <label for="about">Расскажите о себе</label>
+    <textarea id="about" name="about" rows="4" placeholder="Расскажите кратко о себе (до 250 символов)" required></textarea>
+    <small>Описание не более 250 символов.</small>
+    <div class="error-message" id="about-error"></div>
+
+    <button type="submit">Проверить</button>
+  </form>
+  <script src="laboratory_work_15.js"></script>
+</body>
+</html>
